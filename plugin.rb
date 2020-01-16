@@ -50,7 +50,7 @@ class TwitchAuthenticator < ::Auth::Authenticator
     omniauth.provider :twitch,
      CLIENT_ID,
      CLIENT_SECRET,
-     scope: 'user:read:email'
+     scope: 'openid user:read:email'
   end
 end
 
