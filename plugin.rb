@@ -3,7 +3,7 @@
 # version: 1.0.1
 # author: Night (nightdev.com)
 
-gem 'omniauth-twitch', '1.0.0'
+gem 'omniauth-twitch', '1.1.0'
 
 class TwitchAuthenticator < ::Auth::Authenticator
 
