@@ -1,4 +1,4 @@
-# name: Twitch
+# name: discourse-auth-twitch
 # about: Authenticate to Discourse with Twitch
 # version: 1.0.1
 # author: Night (nightdev.com)
@@ -9,6 +9,10 @@ class TwitchAuthenticator < ::Auth::Authenticator
 
   CLIENT_ID = ENV["TWITCH_CLIENT_ID"]
   CLIENT_SECRET = ENV["TWITCH_CLIENT_SECRET"]
+
+  def enabled?
+     true
+  end
 
   def name
     'twitch'
